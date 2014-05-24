@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block head %}
+  {{ super() }}
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/index.css" />
+{% endblock %}
+
+{% block content %}
+<div id="right-info">
+  <div id="recent-builds">
+    <h3>Recent Package Builds</h3>
+    <!--#include virtual="/gen/recent-builds.html" -->
+  </div>
+</div>
+<section id="content">
+{% block content_title %}
+{% endblock %}
+
+<div id="intro">
+<h2>A simple, lightweight distribution for MIPS</h2>
+<p>Arch Linux MIPS is a Linux distribution built from the source of Arch Linux with minimal changes necessary to successfully build for & run on the MIPS architecture.</p>
+<p>Currently the distribution is available for machines capable of executing mips32r2el hard float binaries (that is, little endian systems whose CPUs implement revision 2 of the MIPS32 ISA). Big endian builds are planned for the future.</p>
+</div>
+
+<ul id="post-list">
+{% for article in articles_page.object_list %}
+  <li><article class="hentry">
+    <header>
+      <abbr class="published" title="{{ article.date.isoformat() }}"> {{ article.locale_date }} </abbr>
+      <h4 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h4>
+    </header>
+
+    <div class="entry-content"> {{ article.content }} </div>
+  </article></li>
+{% endfor %}
+</ul>
+{% include 'pagination.html' %}
+</section>
+{% endblock content %}

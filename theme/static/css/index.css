@@ -1,0 +1,50 @@
+section#content {
+	margin: 20px 340px 0 0;
+}
+
+div#intro {
+	border: 1px solid #3e193d;
+	padding: .65em;
+	background: #f8e8f8;
+}
+
+div#intro h2 {
+	margin: 0 0 .5em 0;
+	border-bottom: 1px solid #aaa;
+}
+
+ul#post-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#right-info {
+	float: right;
+	margin: 20px 40px 20px 20px;
+	width: 300px;
+}
+
+div#recent-builds {
+	border: 1px solid #3e193d;
+	background: #f8e8f8;
+	padding: 0.65em;
+}
+
+div#recent-builds h3 {
+	margin: 0;
+	font-size: 1.25em;
+	color: #181818;
+}
+
+article.hentry {
+}
+
+article.hentry header h4 {
+	border-bottom: 1px dotted #bbb;
+}
+
+article.hentry header abbr.published {
+	float: right;
+	font-size: .85em;
+}
