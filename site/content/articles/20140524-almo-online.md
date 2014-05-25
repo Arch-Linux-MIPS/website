@@ -8,7 +8,7 @@ informative than the placeholder that was previously here :)
 I intend to expand the content of this site in the coming days & tie it together
 with (the third and hopefully long lasting version of) the Arch Linux MIPS build
 infrastructure in order to provide useful information such as package
-information, build state & access to build logs. I will also be adding pages
+details, build state & access to build logs. I will also be adding pages
 detailing how to install Arch Linux MIPS to various targets, beginning with
 QEMU.
 
