@@ -37,6 +37,16 @@ div#recent-builds h3 {
 	color: #181818;
 }
 
+div#recent-builds ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+div#recent-builds ul li span.ver {
+	font-style: italic;
+}
+
 article.hentry {
 }
 
