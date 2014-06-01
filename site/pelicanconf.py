@@ -28,3 +28,7 @@ DEFAULT_PAGINATION = 10
 
 ARTICLE_SAVE_AS = 'news/{date:%Y}{date:%m}{date:%d}-{slug}.html'
 ARTICLE_URL = ARTICLE_SAVE_AS
+
+STATIC_PATHS = [
+	"py",
+]
