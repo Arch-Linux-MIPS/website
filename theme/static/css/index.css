@@ -47,6 +47,10 @@ div#recent-builds ul li span.ver {
 	font-style: italic;
 }
 
+div#recent-builds ul li span.arch {
+	float: right;
+}
+
 article.hentry {
 }
 
