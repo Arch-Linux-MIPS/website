@@ -1,0 +1,31 @@
+table#packages {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table#packages, table#packages td {
+	border: none;
+}
+
+table#packages tr.header {
+	background-color: #181818;
+	color: white;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+}
+
+table#packages td.repo {
+	padding-left: 0.2em;
+}
+
+table#packages tr.up-to-date {
+	background-color: #bdecb6;
+}
+
+table#packages tr.not-built {
+	background-color: #ff7878;
+}
+
+table#packages tr.out-of-date {
+	background-color: #ffb347;
+}
